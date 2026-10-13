@@ -1,5 +1,5 @@
 // Blur Picture welcome page: shows the pin guide or the usage guide.
-// Code from the Captain Bootcamp 26 lesson 3.2 "Создаем Welcome Page" (platform text of 13.10.2026), unchanged
+// Code from the Captain Bootcamp 26 lesson 3.2 "Creating a Welcome Page" (platform text of 13.10.2026), unchanged
 // except for STORE_EXTENSION_ID. Rules, strongest first: manual choice (#pin / #usage or the switch link) >
 // live reply of the extension (every 1.5 s on a visible tab and on return to the tab) > ?pinned=1|0 hint > pin guide.
 (function () {
