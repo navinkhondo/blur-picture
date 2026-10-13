@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Welcome to Blur Picture!</title>
+  <meta name="description" content="Blur Picture is installed. Pin it to the toolbar to learn how to blur faces and text in any picture.">
+  <meta name="robots" content="noindex">
+  <link rel="icon" type="image/png" sizes="128x128" href="img/icon-128.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="img/icon-48.png">
+  <link rel="apple-touch-icon" href="img/icon-128.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<!-- Default is "pin": without JS the user still gets the pin guide. -->
+<body data-mode="pin">
+  <main class="page">
+
+    <!-- Mode 1: the extension is hidden in the puzzle menu -->
+    <section class="mode mode-pin" aria-labelledby="pin-title">
+      <h1 id="pin-title">Blur Picture Installed</h1>
+      <p class="lead">Click the puzzle piece icon (1) in the top-right corner of your browser. Then click the three dots (2) next to Blur Picture and choose Pin to Toolbar (3):</p>
+      <figure class="shot">
+        <img src="img/pin-steps.png" width="2072" height="1216" alt="Chrome toolbar: the puzzle piece (1) opens the Extensions menu, the three dots (2) next to Blur Picture open its menu, and Pin to Toolbar (3) keeps it on the toolbar.">
+      </figure>
+      <p class="lead">Open the extension (4) on any page to start using Blur Picture:</p>
+      <figure class="shot">
+        <img src="img/open-extension.png" width="2072" height="1216" alt="The Blur Picture icon (4) is pinned to the Chrome toolbar." loading="lazy">
+      </figure>
+      <p class="switch">
+        Already pinned? <a href="#usage" data-switch="usage">Learn how to use Blur Picture</a>.
+      </p>
+    </section>
+
+    <!-- Mode 2: the extension is already on the toolbar -->
+    <section class="mode mode-usage" aria-labelledby="usage-title">
+      <h1 id="usage-title">Blur Picture is ready</h1>
+      <p class="lead">It’s already in your toolbar. Here’s how to get the most out of it.</p>
+
+      <figure class="shot shot-toolbar">
+        <picture>
+          <source media="(max-width: 720px)" srcset="img/toolbar-click-mobile.png" width="890" height="243">
+          <img src="img/toolbar-click.png" width="2072" height="243" alt="Click the Blur Picture icon on the Chrome toolbar.">
+        </picture>
+        <figcaption>Click the Blur Picture icon on any page to open the editor.</figcaption>
+      </figure>
+
+      <ol class="steps">
+        <li class="step">
+          <div class="step-text">
+            <h2><span class="num">1</span>Upload a picture</h2>
+            <p>Click <b>Upload image</b> and choose a picture from your computer.</p>
+          </div>
+          <figure class="popup"><img src="img/usage-upload.png" width="680" height="640" alt="Blur Picture Editor with an Upload Image button" loading="lazy"></figure>
+        </li>
+
+        <li class="step">
+          <div class="step-text">
+            <h2><span class="num">2</span>Hide faces and text</h2>
+            <p>Drag over the part you want to hide — a face, name, or license plate. It will be blurred right away.</p>
+          </div>
+          <figure class="popup"><img src="img/usage-blur.png" width="680" height="640" alt="A picture in Blur Picture with the face and license plate blurred." loading="lazy"></figure>
+        </li>
+
+        <li class="step">
+          <div class="step-text">
+            <h2><span class="num">3</span>Download results</h2>
+            <p>Click <b>Download</b>. To change the format, click the arrow next to it and choose <b>PNG</b>, <b>JPG</b>, or <b>WebP</b>.</p>
+          </div>
+          <figure class="popup"><img src="img/usage-download.png" width="680" height="640" alt="The Download button supports PNG, JPG, and WebP formats." loading="lazy"></figure>
+        </li>
+      </ol>
+
+      <p class="switch">
+        Don’t see the icon in your toolbar? <a href="#pin" data-switch="pin">Learn how to pin it</a>.
+      </p>
+    </section>
+
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
